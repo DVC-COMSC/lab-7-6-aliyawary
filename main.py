@@ -1,18 +1,17 @@
-
 def getInput():
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    uservalues = input('Enter Values: ')
+    numbers = list(uservalues.split())
+    for i in range(len(numbers)):
+        numbers[i] = int(numbers[i])
+    return numbers
 
 
 def makeReverse(numbers):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    revList = []
+    for i in range(len(numbers)):
+        x = numbers.pop(-1)
+        revList.append(x)
+    return revList
 
 
 def main():
